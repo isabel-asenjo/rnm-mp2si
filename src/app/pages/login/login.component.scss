@@ -1,0 +1,54 @@
+@import 'src/styles.scss';
+
+.container1{
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.6;
+    }
+}
+
+
+
+.content {
+    font-family: $font-family-lato;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro-text{
+    background-color:rgba(39, 7, 32, 0.733);
+    height: 15vh;
+    width: 60vw;
+    margin: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+.title{
+    font-family: $font-family-bowlby;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
+}
