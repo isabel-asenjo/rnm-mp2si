@@ -1,0 +1,43 @@
+
+
+<nav class="navbar navbar-light bg-light">
+<!--
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="#">Especie</a>
+          <a class="dropdown-item" href="#">Tipo</a>
+        </div>
+    </div>-->
+
+
+  <form class="form-inline">
+      <p>Buscar por personaje: </p>
+      <div>
+          <input type="text" class="form-control mr-sm-2" name="filterChar" placeholder="Search" aria-label="Search" [(ngModel)]="filterChar">
+      </div>
+  </form>
+</nav>
+
+
+
+
+<div class="content" fxLayout="row wrap" fxLayoutGap="10px grid" >
+    <div fxFlex="23%" fxFlex.xs="20%" fxFlex.sm="20%" *ngFor="let c of characters | filter:filterChar | paginate: { itemsPerPage: 20, currentPage: p}">
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+          <mat-card-title>{{c.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{c.image}}" alt="{{c.name}}">
+        <mat-card-actions>
+          <button type="button" class="btn btn-primary" (click)='showDeets(c.name)'>Detalles</button>
+
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
+
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
