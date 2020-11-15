@@ -1,0 +1,21 @@
+[debug] [2020-11-15T09:59:00.367Z] ----------------------------------------------------------------------
+[debug] [2020-11-15T09:59:00.378Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\eddy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-15T09:59:00.379Z] CLI Version:   8.15.1
+[debug] [2020-11-15T09:59:00.380Z] Platform:      win32
+[debug] [2020-11-15T09:59:00.380Z] Node Version:  v14.15.0
+[debug] [2020-11-15T09:59:00.386Z] Time:          Sun Nov 15 2020 05:59:00 GMT-0400 (Venezuela Time)
+[debug] [2020-11-15T09:59:00.387Z] ----------------------------------------------------------------------
+[debug] [2020-11-15T09:59:00.387Z] 
+[debug] [2020-11-15T09:59:00.440Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-15T09:59:00.442Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\eddy\Documents\Doc Isabel\Mis documentos de verdad 100% real no fake\UNIMET\2021-1\Sistemas de Info\mp2
+
